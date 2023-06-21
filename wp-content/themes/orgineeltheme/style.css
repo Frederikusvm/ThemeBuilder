@@ -1,0 +1,87 @@
+/*
+Theme Name: Blank Theme V2
+Author: ROC Horizon College
+Description: Dit thema laat op de homepage een overzicht van posts zien met een bovenaan een lijst van links naar de beschikbare pagina's
+Version: 2.0
+*/
+
+body {
+    top: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('./fotos/misty.jpg');
+    background-size: cover;
+}
+
+p, h2 {
+    color: aliceblue;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(28, 28, 51);
+    height: 4rem;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: rgb(20, 20, 49);
+}
+
+nav a {
+    text-decoration: none;
+    color: darkslateblue;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.articlecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25rem;
+    border: solid white 2px;
+}
+
+article {
+    padding: 1rem;
+    border-radius: 2px; background-color: rgb(28, 28, 51);
+}
+
+article a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    height: 4rem;
+    width: 100%;
+    background-color: rgb(28, 28, 51);
+}

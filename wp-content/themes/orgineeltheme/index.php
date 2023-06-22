@@ -35,10 +35,15 @@
                 the_post();
                 ?>
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <div class="row">
+                <img src="https://picsum.photos/200?grayscale" alt="">
+
+                <div class="column">
                     <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                    <div class="entry-content">
-                        <?php the_content(); ?>
-                    </div>
+                    <div class="entry-content"><?php the_content(); ?></div>
+                </div>
+
+                </div>
                 </article>
                 <?php
             endwhile;
@@ -47,10 +52,9 @@
             <p>Geen berichten gevonden.</p>
         <?php endif; ?>
     </div>
-    </main>
 
-    <footer>
-        <p class="text-center">Copyright &copy; Horizon College</p>
-    </footer>
+    <?php include('includes/footer.php'); ?>
+
+    </main>
 </body>
 </html>

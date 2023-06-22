@@ -10,8 +10,11 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
-    background-image: url('./fotos/misty.jpg');
+    background-image: url('./fotos/scene2.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: -10rem;
 }
 
 p, h2 {
@@ -25,7 +28,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(28, 28, 51);
+    background-color: rgba(28, 28, 51, 0.64);
     height: 4rem;
 }
 
@@ -42,7 +45,7 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: rgb(20, 20, 49);
+    background-color: rgb(20, 20, 49, 0.64);
 }
 
 nav a {
@@ -56,15 +59,14 @@ nav a:hover {
 
 .articlecontainer {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-top: 25rem;
-    border: solid white 2px;
+    margin-top: 30rem;
+    flex-direction: column;
 }
 
 article {
     padding: 1rem;
-    border-radius: 2px; background-color: rgb(28, 28, 51);
+    border-radius: 2px; background-color: rgb(40, 38, 38);
 }
 
 article a {
@@ -76,6 +78,15 @@ article a:hover {
     text-decoration: underline;
 }
 
+article:nth-child(2) {
+    border-top: solid 1px rgb(57, 57, 57);
+}
+
+.entry-content, .entry-title {
+    width: 80%;
+    padding-left: 6rem;
+}
+
 footer {
     display: flex;
     justify-content: center;
@@ -84,4 +95,16 @@ footer {
     height: 4rem;
     width: 100%;
     background-color: rgb(28, 28, 51);
+    border-top: solid 1px rgb(57, 57, 57);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2rem;
 }
